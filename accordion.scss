@@ -1,0 +1,39 @@
+//out: accordion.css
+@import "css3-mixins";
+.pana-accordion {
+	width: 800px;
+	height: 200px;
+	margin: 20px auto;
+	position: relative;
+	overflow: hidden;
+	.pana-accordion-wrap {
+		margin-left: -1px;
+		position: relative;
+		width: 300%;
+		.pana-accordion-item {
+			border-left: 1px solid #BABABA;
+			width: 100px;
+			height: 200px;
+			overflow: hidden;
+			float: left;
+			position: absolute;
+			left: 0;
+			top: 0;
+			.pana-accordion-mask {
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				position: absolute;
+				z-index: 10;
+				background-color: #000;
+				@include opacity(0.4);
+			}
+			&.active {
+				.pana-accordion-mask {
+					display: none;
+				}
+			}
+		}
+	}
+}
