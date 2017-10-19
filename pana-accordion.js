@@ -1,7 +1,7 @@
 /*
 * author: pace zhong
 * date: 2015-06-15
-* desc: accordion componet for you.jd.com
+* desc: accordion componet
 * dependencies: jQuery 1.6+
 */
 var accordion= {
